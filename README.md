@@ -107,21 +107,21 @@ cd Blog-Management-System
 ## Screenshots
 
 ### 1. User Signup
-![Signup](screenshots/signup.jpg)
+![Signup](screenshots/signup.png)
 
 ### 2. User Signin
-![Signin](screenshots/signin.jpg)
+![Signin](screenshots/signin.png)
 
 ### 3. Create a Post
-![Create Post](screenshots/create_post.jpg)
+![Create Post](screenshots/create_post.png)
 
 ### 4. Get Posts
-![Get Post](screenshots/get_post.jpg)
+![Get Post](screenshots/get_post.png)
 
 ### 5. Add Comment
-![Add Comment](screenshots/add_comment.jpg)
+![Add Comment](screenshots/add_comment.png)
 
 ### 6. Get Post by ID
-![Get Post by ID](screenshots/get_post_by_user.jpg)
+![Get Post by ID](screenshots/get_post_by_user.png)
 
 
