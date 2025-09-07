@@ -1,0 +1,37 @@
+# application.yml
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:blogdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+
+  # JPA Configuration
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop  # Creates tables on startup, drops on shutdown
+    show-sql: true  # Shows SQL queries in console for learning
+    properties:
+      hibernate:
+        format_sql: true  # Formats SQL for better readability
+
+  # H2 Console (for development only)
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+# JWT Configuration
+jwt:
+  secret: MySuperSecureSecretKeyThatIsAtLeast32Chars!  # In production, use environment variable
+  expiration: 86400000  # 24 hours in milliseconds
+
+# Logging Configuration
+logging:
+  level:
+    com.example.blogmanagement: DEBUG
+    org.springframework.security: DEBUG

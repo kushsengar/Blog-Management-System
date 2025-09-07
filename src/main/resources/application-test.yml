@@ -1,0 +1,25 @@
+# src/test/resources/application-test.yml
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+  h2:
+    console:
+      enabled: false
+
+jwt:
+  secret: testSecretKey
+  expiration: 86400000
+
+logging:
+  level:
+    org.springframework.security: WARN
+    org.hibernate: WARN
